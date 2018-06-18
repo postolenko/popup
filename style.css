@@ -740,7 +740,7 @@ textarea:focus {
     line-height: 0;
     overflow: hidden;
     min-height: 150px;
-    padding: 25px 0 40px 3%;
+    padding: 25px 0 32px 3%;
 }
 
 .popup_footer .col-1 {
