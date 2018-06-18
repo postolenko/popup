@@ -1004,6 +1004,10 @@ textarea:focus {
         right: 0;
     }
 
+    .thumb-1_1_wrapp {
+        padding-right: 0;
+    }
+
 /*    .player_img {
         top: 26%;
     }
