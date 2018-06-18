@@ -395,7 +395,7 @@ textarea:focus {
 
 .popup_header .desc {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     padding: 0 0 0 6%;
 }
 
@@ -748,6 +748,8 @@ textarea:focus {
     vertical-align: top;
     width: 31%;
     padding: 47px 0 10px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .popup_footer .col-2 {
@@ -812,6 +814,11 @@ textarea:focus {
     background: rgba(0, 0, 51, .66);
 }
 
+.club-article .description {
+    position: relative;
+    z-index: 3;
+}
+
 .club-article p {
     font-family: 'BlissPro_Heavy';
     font-size: 19px;
@@ -857,3 +864,161 @@ textarea:focus {
 
 
 /*-- /Popup --*/
+
+
+@media only screen and (max-width: 768px) {
+
+    
+
+}
+
+@media only screen and (max-width: 610px) {
+
+    .popup_header .desc {
+        padding: 0 0 0 2%;
+    }
+
+    .popup_header h1 .small {
+        font-size: 33px;
+        line-height: 36px;
+    }
+
+    .popup_header h1 .big {
+        margin: -13px 0;
+        font-size: 54px;
+        line-height: 61px;
+    }
+
+    .popup_header p {
+        padding-left: 1%;
+        font-size: 29px;
+        line-height: 31px;
+        color: #ffff00;
+    }
+
+    .popup_header .img {
+        max-width: 148px;
+        right: 26%;
+    }
+
+    .thumb-1_2_wrapp {
+        top: 26px;
+    }
+
+    .player_img {
+        max-width: 78%;
+        top: 12%;
+        left: -24%;
+    }
+
+    .thumb-1_3_wrapp {
+        margin: 38px 0 20px 0;
+    }
+
+    .thumb-2_1_wrapp {
+        padding: 10px 0;
+    }
+
+    .thumb-2_2_wrapp {
+        padding: 10px 0;
+    }
+
+    .popup_footer .col-1 {
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+
+    .popup_footer .col-2 {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .popup_header h1 .small {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .popup_header h1 .big {
+        margin: -13px 0;
+        font-size: 41px;
+        line-height: 51px;
+    }
+
+    .popup_header p {
+        padding-left: 0;
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .popup_header .flag_box {
+        width: 54%;
+        opacity: .6;
+    }
+
+    .popup_header .img {
+        max-width: 100px;
+        right: 20%;
+        top: 1px;
+    }
+
+    .popup_content {
+        padding: 19px 3% 5px 3%;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 50px;
+        line-height: 67px;
+    }
+
+    .club-article .description {
+        padding: 0 4%;
+    }
+
+    .club-article .img-box {
+        opacity: .5;
+        right: unset;
+        left: 0;
+    }
+
+    .club-article .img {
+        right: 0;
+    }
+
+    .popup_footer {
+        padding: 0 0 20px 0;
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .popup_header .flag_box {
+        width: 83%;
+    }
+
+    .popup_header .img {
+        right: 0;
+    }
+
+    .player_img {
+        top: 26%;
+    }
+
+    .club-article .img-box {
+        width: 50%;
+    }
+
+    .club-article .img {
+        opacity: .7;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    
+
+}
