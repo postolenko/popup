@@ -1,0 +1,2042 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr_UltraLight';
+	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
+	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr_Light';
+	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr_Bold';
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'BlissPro_Heavy';
+    src: url('../fonts/BlissPro-Heavy.eot');
+    src: url('../fonts/BlissPro-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BlissPro-Heavy.woff') format('woff'),
+    url('../fonts/BlissPro-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BlissPro_Bold';
+    src: url('../fonts/BlissPro-Bold.eot');
+    src: url('../fonts/BlissPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BlissPro-Bold.woff') format('woff'),
+    url('../fonts/BlissPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BlissPro_ExtraBold';
+    src: url('../fonts/BlissPro-ExtraBold.eot');
+    src: url('../fonts/BlissPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BlissPro-ExtraBold.woff') format('woff'),
+    url('../fonts/BlissPro-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	color:#fff;
+}
+h1,h2{
+	font-family: 'HelveticaNeueCyr_UltraLight';
+	letter-spacing: 3px;
+}
+.main_box{
+    overflow-y: scroll;
+    position: relative;
+}
+.all_subscribe{
+    margin-bottom: 10px;
+}
+
+.player_name_subscribe{
+    display: none;
+}
+#desktop .main_box{
+	/*width: 640px;*/
+	margin: 0 auto;
+	height: 730px;
+}
+.main_box{
+/*	background: url(../img/desktop_bg.jpg);*/
+	background: url(img/desktop_bg.jpg);
+}
+.header{
+	background: #000033;
+	height: 62px;
+}
+.header h1{
+	text-align: center;
+	font-size: 30px;
+	line-height: 62px;
+	margin: 0;
+	padding: 0;
+}
+
+.content_header{
+	width: 456px;
+	height: 77px;
+	opacity: 0.7;
+	border-radius: 15px;
+	background: #000033;
+	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 50px;
+}
+.content_header h2{
+	text-align: center;
+	font-size: 33px;
+	line-height: 77px;
+	margin: 0;
+	padding: 0;
+}
+
+.players{
+	padding: 0 28px;
+}
+.player{
+	margin-bottom: 28px;
+}
+
+.player_info{
+	width: 210px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.player_photo{
+	position: relative;
+	width: 155px;
+	height: 155px;
+	background: rgba(8,18,70);
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.player_goals{
+	position: absolute;
+	top: -1px;
+	left: -25px;
+	width: 56px;
+	height: 56px;
+	border: 2px solid #fff;
+	font-size: 25px;
+	/*font-weight: bold;*/
+	border-radius: 50%;
+	background: #000033;
+	line-height: 56px;
+	text-align: center;
+	font-family: 'Impact';
+}
+
+.player_photo img{
+	width: 133px;
+	height: 133px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+
+.player_name{
+	font-size: 21px;
+	width: 210px;
+	height: 52px;
+	border-radius: 52px;
+	text-align: center;
+	line-height: 52px;
+	background: #081246;
+	margin-top: -12px;
+	font-family: 'HelveticaNeueCyr_Light';
+	letter-spacing: 3px;
+}
+
+.player_detail{
+	display: inline-block;
+	vertical-align: top;
+	width: 350px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+.player_detail table{
+	border-collapse: collapse;
+	width: 100%;
+	letter-spacing: 2px;
+}
+.player_detail table thead th{
+	height: 42px;
+	text-align: center;
+	background: #000033;
+	font-family: 'HelveticaNeueCyr_Light';
+	font-weight: normal;
+}
+.player_detail table thead tr th:not(:last-child),
+.player_detail table tbody tr td:not(:last-child){
+	border-right: 1px solid #4d4d71;
+}
+
+.player_detail table tbody tr td{
+	background: #06154d;
+	height: 67px;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'HelveticaNeueCyr_Bold';
+}
+
+.player_subscribe{
+	margin-top: 15px;
+}
+.subscribe_label{
+	width: 95px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+	font-family: 'HelveticaNeueCyr_Light';
+	background: #021853;
+	border-radius: 34px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	letter-spacing: 1px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  height: 33px;
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  /*top: -4px;*/
+  left: 0;
+  width: 54px;
+  height: 33px;
+  border-radius: 26px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+  transition: .2s;
+  border: 6px solid #021651;
+  box-sizing: border-box;
+}
+.checkbox + label:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 20px;
+  height: 19px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: .2s;
+}
+.checkbox:checked + label:before {
+  background: #33cc66;
+}
+.checkbox:checked + label:after {
+  left: 27px;
+}
+/*.checkbox:focus + label:before {
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}*/
+
+/*.player_info >div{
+	cursor: pointer;
+}*/
+
+
+/*modal*/
+.modal {
+	width: 800px; 
+	height: 730px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	background: #fff;
+	/*position: fixed;*/
+    position: absolute;
+	top: 10%;
+	left: 50%;
+	/*margin-top: -400px;*/
+	/*margin-left: -400px;*/
+	display: none;
+	/*opacity: 0;*/
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	/*padding: 20px 10px;*/
+
+    width: 90%;
+    max-width: 800px;
+    /*height: auto;*/
+    /*min-height: 730px;*/
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal .modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.7; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.7; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none;   
+}
+
+#player_cart_modal{
+	background: url(../img/player_cart_bg.jpg);
+    /*background: url(img/player_cart_bg.jpg);*/
+}
+.modal_content {
+    height: 100%;
+    background: url(../img/fifacover.png) no-repeat center center !important;    
+    /*background: url(img/fifacover.png) no-repeat 230px;*/
+    /*background-position: center;*/
+}
+
+.count_carts,
+.count_goals,
+.count_time {
+	font-family: "Impact";
+}
+.count_text{
+	font-family: "Impact";
+	font-size: 62px;
+}
+/*.count_text>span{
+	font-size: 25px;
+}*/
+.count_goals span.span_mini,
+.count_transfers span.span_mini{
+	font-size: 25px;
+    margin-left: 5px;
+}
+
+.count_goals,
+.count_transfers,
+.count_time {
+	color: #ccff00;
+	position: relative;
+	font-family: "Impact";
+}
+
+.count_goals:before{
+	content: '';
+    display: inline-block;
+/*	position: absolute;*/
+    width: 67px;
+    height: 54px;
+	background: url(../img/count_goals.png);
+	/*background: url(img/count_goals.png);*/
+}
+.count_goals {
+    margin-left: 64px;
+    margin-top: 55px;
+}
+.count_goals>div {
+    display: inline-block;
+    line-height: 25px;
+    margin-left: 3px;
+}
+.count_time {
+    margin-left: 140px;
+    margin-top: 30px;
+}
+.count_time:before{
+	content: '';
+	display: inline-block;
+/*	position: absolute;*/
+width: 45px;
+    height: 57px;
+	/*background: url(../img/count_goals.png);*/
+	background: url(../img/count_time.png) no-repeat left top;
+    background-size: cover;
+
+}
+.count_time .count_text {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: 15px;
+}
+.red_carts,
+.td_red{
+	color:#ff0000;
+}
+.yellow_carts,
+.td_yellow{
+	color: #ccff00;
+}
+.count_carts{
+	position: relative;
+	float: right;
+    top: -25px;
+    right: 70px;
+}
+.count_carts:before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -60px;
+	width: 53px;
+	height: 72px;
+	background: url(../img/count_carts.png);
+	/*background: url(img/count_carts.png);*/
+}
+
+.for_career{
+	font-size: 20px;
+	color:#fff;
+}
+.count_transfers {
+    margin-top: 57px;
+    margin-left: 36px;
+}
+.count_transfers>div {
+    display: inline-block;
+    line-height: 25px;
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+}
+.count_transfers .count_text {
+    position: relative;
+    right: 32px;
+}
+.count_transfers:before{
+	content: '';
+	display: inline-block;
+/*	position: absolute;*/
+/*	left: -60px;*/
+    width: 59px;
+    height: 56px;
+	background: url(../img/count_transfers.png) no-repeat left top;
+    background-size: cover;
+	/*background: url(img/count_transfers.png);*/
+}
+.modal_player_name:before {
+    content: '';
+    display: block;
+    width: 122px;
+    border-top: 131px solid #172452;
+    border-right: 60px solid transparent;
+}
+.bl_player_name {
+    position: absolute;
+    top: 0;
+    height: 114px;
+    padding-top: 17px;
+}
+/*.bl_player_name:before {
+    content: '';
+    background: url(../img/arg_football_association_logo.png) center no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 90px;
+    padding: 0 20px;
+}*/
+.player_team_logo{
+    display: inline-block;
+    padding: 0 20px;
+    /*width: 64px;*/
+    height: 90px;
+}
+.bl_player_name>div {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 38px;
+}
+.fname {
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-family: 'BlissPro_ExtraBold';
+}
+.lname {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 54px;
+    font-weight: bold;
+    font-family: 'BlissPro_Heavy';
+}
+.country {
+    font-size: 26px;
+    padding-left: 26px;
+    line-height: 26px;
+    font-family: 'BlissPro_Bold';
+}
+.the_weight {
+    height: 68px;
+    margin-top: 50px;
+    margin-left: 69px;
+    font-family: 'BlissPro_Bold';
+}
+.the_weight:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 161px;
+    height: 68px;
+    background: url(../img/the_weight.png) center no-repeat;
+}
+.growth {
+    font-family: 'BlissPro_Bold';
+    height: 68px;
+    margin-left: 23px;
+    position: relative;
+    top: -5px;
+}
+.growth:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 161px;
+    height: 68px;
+    background: url(../img/growth.png) center no-repeat;
+}
+.num {
+/*    font-family: "Impact";*/
+    color: #ccff00;
+    font-size: 20px;
+    position: relative;
+    top: 22px;
+    left: 74px;
+    width: 85px;
+    text-align: center;
+}
+.feeding_leg {
+    float: right;
+}
+.feeding_leg span {
+    color: #ccff00;
+    font-family: "Impact";
+    font-size: 22px;
+}
+.feeding_leg_text {
+    position: relative;
+    bottom: 80px;
+    right: 28px;
+    line-height: 26px;   
+}
+.feeding_leg .count_text {
+    font-size: 56px !important;
+}
+/*.feeding_leg:before {*/
+img.feeding_leg_img {
+    display: block;
+    position: relative;
+    top: -10px;
+    float: right;
+    right: 147px;
+    width: 66px;
+    height: 65px;
+}
+.football_club {
+    float: right;
+    position: relative;
+    bottom: 90px;
+/*    background: url(img/football_club_div.png) center no-repeat;*/
+    width: 325px;
+/*    height: 87px;*/
+    width: 300px;
+    height: 0;
+    border-top: 87px solid #00003385;
+    border-left: 30px solid transparent;
+}
+.football_club:before {
+/*
+    content: '';
+    display: block;
+    position: relative;
+    background: url(img/football_club_div.png) center no-repeat;
+    width: 319px;
+    height: 87px;
+*/
+}
+.football_club_text_text {
+    display: inline-block;
+    padding-left: 40px;
+    font-family: "Impact";
+    text-transform: uppercase;
+    vertical-align: top;
+    padding-top: 20px;
+    position: absolute;
+    top: -87px;
+    left: -30px;
+}
+.football_club_text {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.football_club_name {
+/*    font-weight: bold;*/
+    letter-spacing: 1px;
+    padding-left: 12px;
+    font-size: 24px;
+}
+.football_club_form {
+    display: inline-block;
+    position: relative;
+/*    bottom: 18px;*/
+    z-index: 1;
+    bottom: 105px;
+    left: 162px;
+    width: 82px;
+    height: 112px;
+    background: url() center no-repeat;
+    background-size: cover;
+}
+/*.football_club_form:before {
+    display: block;
+    content: '';
+    background: url(../img/the_form.png) center no-repeat;
+    width: 82px;
+    height: 112px;
+}*/
+.football_club_flag {
+    display: inline-block;
+    position: relative;
+    float: right;
+/*    bottom: 117px;*/
+    z-index: 0;
+    bottom: 87px;
+
+    background: url(../img/flag.png) center no-repeat;
+    width: 90px;
+    height: 87px;
+}
+/*.football_club_flag:before {
+    display: block;
+    content: '';
+    background: url(../img/flag.png) center no-repeat;
+    width: 90px;
+    height: 87px;
+}*/
+.football_club2 {
+    float: right;
+    position: relative;
+    bottom: 120px;
+    background: url(../img/football_club2_div.png) left center no-repeat;
+    width: 519px;
+    height: 112px;
+}
+.football_club_text_text2 {
+    display: inline-block;
+    padding-left: 44px;
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-family: "Impact";
+    text-transform: uppercase;
+    vertical-align: top;
+    padding-top: 13px;
+}
+.football_club_text2 {
+    padding-left: 49px;
+}
+.football_club_form2 {
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
+    left: 42px;
+    z-index: 1;
+    width: 125px;
+    height: 153px;
+    background: url() center no-repeat;
+    background-size: cover;
+}
+/*.football_club_form2:before {
+    display: block;
+    content: '';
+    background: url(../img/the_form2.png) center no-repeat;
+    width: 115px;
+    height: 133px;
+}*/
+.football_club_flag2 {
+    display: inline-block;
+    position: relative;
+    float: right;
+    /*bottom: 138px;*/
+    z-index: 0;
+
+    height: 112px;
+    /*width: 175px;*/
+    /*background: url() center center no-repeat;*/
+}
+/*.football_club_flag2:before {
+    display: block;
+    content: '';
+    background: url(../img/flag2.png) center no-repeat;
+    width: 175px;
+    height: 112px;
+}*/
+
+
+
+
+/*---------*/
+.all_subscribe{
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -40px;
+}
+.all_subscribe .subscribe_label{
+	width: auto;
+	padding: 0 10px;
+}
+
+
+
+#desktop .main_box{
+	width: 100%;
+	max-width: 1280px;
+}
+.main_box{
+	background: url(../img/max_bg.jpg) top center no-repeat;
+	/*background: url(img/max_bg.jpg) top center no-repeat;*/
+}
+
+.main_box .content{
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+.all_subscribe{
+	display: block;
+	float: none;
+	text-align: right;
+}
+.players{
+	padding: 0;
+}
+.player_detail{
+	width: calc(100% - 240px);
+}
+.player_detail table{
+	display: table;
+	width: calc(100% - 150px);
+	float: left;
+}
+.player_subscribe{
+	float: right;
+	
+	width: 100px;
+	text-align: center;
+	margin-top: 0;
+}
+.subscribe_label{
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+.content_header{
+	width: 254px;
+	height: 43px;
+	
+border-radius: 43px;
+}
+.content_header h2{
+	line-height: 43px;
+	font-size: 18px;
+	
+}
+
+.header{
+	height: 47px;
+	width: 310px;
+	/*opacity: .5;*/
+	/*background: #000033;*/
+	background: rgba(0,0,51,.5);
+	border-bottom-left-radius: 47px;
+	border-bottom-right-radius: 47px;
+	margin: 0 auto;
+	
+}
+
+.header h1{
+	font-size: 19px;
+	line-height: 47px;
+}
+.feeding_leg_none {
+    display: none;
+}
+
+/*-----------MEDIA----------------*/
+
+@media screen and (min-width:640px){
+    .player_photo img{
+        width: 75px;
+        height: 75px;
+        margin-top: 5px;
+    }
+    .player_photo{
+        width: 85px;
+        height: 85px;
+    }
+    .player_goals{
+        width: 38px;
+        height: 38px;
+        left: -15px;
+        line-height: 38px;
+    }
+    .player_name{
+        height: 30px;
+        line-height: 30px;
+        border-radius: 30px;
+        margin-top: -8px;
+        width: auto;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .player_info{
+        width: auto;
+        float: left;
+    }
+    .player_detail table thead th{
+        height: 33px;
+        font-size: 14px;
+    }
+    .player_detail table tbody tr td{
+        height: 50px;
+    }
+    .player_detail{
+        float: left;
+        margin-top: 12px;
+        width: calc(100% - 180px);
+        margin-left: 40px;
+    }
+    .player_detail table{
+        width: 442px;
+    }
+    .player:after{
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	/*.player_detail table{
+		width: calc(100% - 120px);
+	}*/
+    .football_club_text2{
+        padding-left: 0;
+    }
+    .football_club2{
+        width: 460px;
+    }
+
+    .count_time,
+    .count_goals,
+    .the_weight,
+    .count_transfers{
+        margin-left: 23px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .football_club_form2{
+        left: 10px;
+    }
+    .football_club2{
+        width: 435px;
+    }
+    .football_club_flag2{
+        position: absolute;
+        right: 0;
+    }
+    .player_detail{
+        margin-left: 10px;
+            width: calc(100% - 140px);
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .count_carts{
+        right: 20px;
+    }
+    .football_club_text_text2{
+        font-size: 24px;
+        padding-top: 24px;
+    }
+    .football_club2{
+        width: 400px;
+    }
+	/*.player_subscribe{
+		float: none;
+		width: auto;
+		text-align: left;
+		margin-top: 10px;
+		width: auto;
+	}*/
+
+	/*.player_detail table{
+		width: calc(100% - 20px);
+		float: none;
+	}*/
+
+	/*.subscribe_label{
+		margin-bottom: 0;
+		margin-right: 15px;
+	}*/
+	.all_subscribe{
+		padding-right: 20px;
+	}
+
+	.header{
+		width: 100%;
+		border-radius: 0;
+		height: 62px;
+		background: #000033;
+	}
+	.header h1{
+		line-height: 62px;
+		font-size: 26px;
+        white-space:nowrap;
+	}
+	.content_header{
+		width: 456px;
+    	height: 77px;
+    	border-radius: 15px;
+	}
+	.content_header h2{
+	    font-size: 29px;
+    	line-height: 77px;
+        white-space:nowrap;
+	}
+
+    .player_detail table{
+        width: calc(100% - 110px);
+    }
+}
+@media screen and (max-width: 640px) {
+	.modal {
+        width: 100%;
+        /*height: 1136px;*/
+        height: 1060px;
+        margin: 0 auto;
+    }
+    #player_cart_modal {
+     background: url(../img/player_cart_bg_640.jpg); 
+        /*background: url(img/player_cart_bg_640.jpg);*/
+    }
+    .modal_player_name:before {
+        border-right: 0;
+        width: 100%;        
+/*        border-top: 170px solid #000033;*/
+/*        left: 27px;*/
+        position: relative;
+        border-top: 112px solid #000033;
+    }
+    .modal_content {
+        padding-top: 25px;
+    }
+    .bl_player_name:before {
+        display: none;
+    }
+    .bl_player_name {
+        padding-left: 40px;
+/*        padding-top: 47px;*/
+        height: 112px;
+        padding-top: 25px;
+    }
+    .country {
+        color: #ffff00;
+/*        font-size: 34px;*/
+        line-height: 34px;
+    }
+    .bl_player_name>div {
+        line-height: 42px;
+        line-height: 39px;
+    }
+    .fname {
+/*        font-size: 40px;*/
+        letter-spacing: 3px;
+    }
+    .lname {
+/*        font-size: 60px;*/
+    }
+    .modal_content {
+        background: url(../img/fifacover_640.png) 12% no-repeat !important;
+        /*background-position: center;    */
+        background-size: 73% auto !important;
+    }
+    .football_club {
+/*        top: 350px;*/
+        width: 400px;
+        width: 380px;
+/*        border-top: 112px solid #00003385;*/
+        top: 350px;
+    }
+    .football_club_text_text {
+        top: -95px;
+    }
+    .football_club_form {
+        bottom: 100px;
+        left: 200px;
+    }
+    .football_club_form:before {
+        background: url(../img/the_form_640.png) center no-repeat;
+        width: 105px;
+        height: 145px;
+    }
+    .football_club_flag {
+        bottom: 87px;
+    }
+    /*.football_club_flag:before {
+        background: url(../img/flag_640.png) center no-repeat;
+        width: 126px;
+        height: 112px;
+    }*/
+    .football_club_text {
+        font-size: 18px;
+        line-height: 33px;
+    }
+    .football_club_name {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .football_club2 {
+        position: absolute;
+        top: 25px;
+        background: none;
+        width: 94%;
+        text-align: right;
+    }
+    .football_club_text_text2 {
+        display: none;
+    }
+    .football_club_form2 {
+        left: 145px;
+        bottom: 15px;
+    }
+    .football_club_form2:before {
+/*
+        background: url(../img/the_form2_640.png) center no-repeat;
+        width: 175px;
+        height: 200px;
+*/
+    }
+    .football_club_flag2 {
+        bottom: 0;
+    }
+    .football_club_flag2:before {
+/*        background: url(../img/flag2_640.png) center no-repeat;*/
+/*        width: 322px;*/
+/*        height: 170px;*/
+    }
+    .count_time {
+        margin-top: 20px;
+        position: relative;
+/*        left: 60px;*/
+        width: 100%;
+        left: 0px;
+/*        text-align: center;*/
+    }
+    .count_time .count_text {
+        font-size: 54px;
+        top: 15px;
+    }
+    .count_goals {
+        position: relative;
+        float: right;
+/*
+        margin-right: 30px;
+        margin-top: 0;
+*/
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 30px;
+        top: -135px;
+    }
+    .feeding_leg {
+        position: relative;
+        float: left;
+        /*left: 107px;*/
+        margin-left: 20px;
+        top: 735px;
+    }
+    .for_career {
+        position: relative;
+        text-align: left;
+    }
+    .count_transfers {
+/*        margin-top: 75px;*/
+        margin-left: 0;
+        position: relative;
+        float: right;
+        
+        margin-top: 0;
+        top: -65px;
+        width: 100%;
+        text-align: right;
+    }
+    .count_transfers .count_text {
+        font-size: 54px;
+    }
+    .count_transfers span {
+        /*font-size: 20px;*/
+    }
+    .the_weight {
+        position: relative;
+        float: right;
+        left: 334px;
+        margin-right: 30px;
+        margin-left: 0;
+        /*margin-top: 55px;*/
+        top: -120px;
+        
+        left: 0;
+        width: 100%;
+        margin-right: 30px;
+        text-align: right;
+        float: right;
+        /*top: -100px;*/
+        /*top: -65px;*/
+        margin-top: 0;
+    }
+    .the_weight:before {
+        width: 100%;
+        background: url(../img/the_weight.png) right no-repeat;
+    }
+    .growth {
+        position: relative;
+        float: right;
+        margin-right: 30px;
+        /*margin-top: 50px;*/
+        right: 76px;
+        top: -110px;
+        
+        
+        width: 100%;
+        margin-right: 30px;
+        float: right;
+        text-align: right;
+        right: 0;
+        margin-left: 0;
+        margin-top: 20px;
+        top: -120px;
+        /*top: -65px;*/
+    }
+    .growth:before {
+        width: 100%;
+        background: url(../img/growth.png) right no-repeat;
+    }
+    .num {
+        width: 90px;
+        text-align: center;
+        left: 0;
+        float: right;
+        right: 0;
+    }
+    .count_carts {
+        top: 540px;
+        width: 100%;
+        height: 0;
+        text-align: right;
+        right: -53px;
+        margin-right: 23px;
+        position: relative;
+        float: right;
+    }
+    .count_carts:before {
+        top: 10px;
+        position: relative;
+        float: right;
+        left: -190px;
+    }
+    .feeding_leg span {
+        font-size: 20px;
+    }
+    .feeding_leg .count_text {
+        font-size: 54px;
+    }
+    .feeding_leg_text {
+/*        right: 35px;*/
+        right: 0;
+        left: 0;
+        float: left;
+        bottom: 13px;
+        margin-left: 10px;
+    }
+
+
+
+    .player_team_logo{
+        display: none;
+    }
+    .football_club_flag2{
+        position: relative;
+        right: 0;
+/*        height: 170px;*/
+    }
+    .football_club_form2{
+        left: auto;
+        /*right: 100px;*/
+        position: absolute;
+        top: -20px;
+/*        right: 150px;*/
+        right: 123px;
+    }
+    .football_club2{
+        width: 100%;
+        /*position: relative;*/
+    }
+    .lname{
+        font-size: 40px;
+    }
+    .fname{
+        font-size: 30px;
+    }
+    .count_time, .count_goals, .the_weight, .count_transfers{
+
+    }
+    .count_time{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        text-align: left;
+        padding-left: 30%;
+    }
+
+
+    .count_goals{
+        display: block;
+        width: 100%;
+        float: right;
+        margin-left: 0;
+        text-align: right;
+        margin-top: 80px;
+        box-sizing: border-box;
+        padding-right: 30px;
+/*        top: -70px;*/
+        top: -135px;
+    }
+
+    .feeding_leg{
+/*        float: right;*/
+/*        top: 580px;*/
+        
+        float: right;
+        margin: 0;
+        /*width: 100%;*/
+        /*padding-left: 20px;*/
+        top: 530px;
+    }
+    img.feeding_leg_img{
+        right: 180px;
+    }
+    .feeding_leg:before {
+        right: 0;
+        float: left;
+    }
+    .count_transfers{
+/*        top: -100px;*/
+        top: -65px;
+        left: 20px;
+        padding-right: 30px;
+    }
+    .count_transfers>div {
+        left: 12px;
+    }
+
+    .player_detail{
+        width: calc(100% - 240px);
+    }
+    .player_subscribe{
+        float: none;
+        margin-top: 10px;
+        text-align: left;
+        width: auto;
+    }
+    .subscribe_label{
+        margin-bottom: 0;
+    }
+    .player_detail table{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal_content {
+/*        background: url(../img/fifacover_640.png) no-repeat -40px 0;*/
+    }
+    .football_club {
+        width: 340px;
+    }
+    .football_club_text_text {
+        padding-left: 50px;
+    }
+    .football_club_form {
+        /*left: 175px;*/
+    }
+    .football_club_flag {
+        width: 100px;
+        overflow: hidden;
+        height: 87px;
+    }
+    .football_club_form2 {
+/*        left: 90px;*/
+    }
+    .football_club_flag2:before {
+        width: 230px;
+        overflow: hidden;
+    }
+    .the_weight {
+/*        left: 294px;*/
+    }
+    .count_time {
+/*
+        left: 165px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 150px;
+*/
+    }
+}
+
+@media screen and (max-width: 570px) {
+	.player_detail{
+		margin-left: 10px;
+	}
+	.player_detail table{
+		width: 100%;
+	}
+    .count_time {
+        padding-left: 20%;
+    }
+    .bl_player_name {
+/*        padding-left: 20px;*/
+    }
+    .count_goals {
+/*        margin-right: 20px;*/
+    }
+    .count_transfers {
+/*        margin-right: -6px;*/
+    }
+    .count_transfers .count_text {
+/*        font-size: 50px;*/
+    }
+    .the_weight {
+/*        margin-right: 20px;*/
+    }
+    .growth {
+/*        margin-right: 20px;*/
+    }
+    .count_carts {
+/*        right: 60px;*/
+    }
+    .feeding_leg {
+/*
+        left: -1px;
+        top: 670px;
+*/
+    }
+    .feeding_leg:before {
+/*
+        top: 0;
+        right: 0;
+*/
+    }
+    .feeding_leg_text {
+/*
+        top: 0;
+        left: 19px;
+*/
+    }
+    /*.feeding_leg {
+        top: 650px;
+    }*/
+    /*.football_club {
+        top: 600px;
+    }*/
+}
+
+@media screen and (max-width: 540px) {
+	.player_info{
+		width: 180px;
+	}
+	.player_name{
+		width: 100%;
+		font-size: 18px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.player_goals{
+		left: 0px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.player_detail {
+	    width: calc(100% - 200px);
+	}
+    .football_club_flag2:before {
+/*        width: 210px;*/
+    }
+}
+
+@media screen and (max-width: 520px) {
+/*
+    .fname {
+        font-size: 30px;
+    }
+    .lname {
+        font-size: 50px;
+    }
+    .country {
+        font-size: 28px;
+    }
+    .count_time .count_text {
+        font-size: 50px;
+        top: 12px;
+    }
+    .count_goals {
+        margin-top: 25px;
+    }
+    .count_goals .count_text {
+        font-size: 50px;
+    }
+    .count_transfers {
+        margin-top: 50px;
+    }
+    .count_carts {
+        font-size: 60px;
+    }
+    .feeding_leg {
+        margin-left: 10px;
+    }
+    .feeding_leg .count_text {
+        font-size: 50px; 
+    }
+    .feeding_leg:before {
+        right: 5px;
+    }
+    .football_club {
+        width: 330px;
+    }
+    .football_club_text_text {
+        padding-left: 30px;
+    }
+    .football_club_flag2:before {
+        width: 160px;
+    }
+    .football_club_form2 {
+        left: 50px;
+    }
+    .the_weight {
+        left: 284px;
+    }
+*/
+    .count_time {
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal_player_name:before {
+/*        border-top: 112px solid #000033;*/
+    }
+    .bl_player_name {
+/*
+        padding-left: 30px;
+        padding-top: 25px;
+        height: 112px;        
+*/
+    }
+    .bl_player_name>div {
+/*        padding-top: 3px;*/
+    }
+    .fname {
+/*        font-size: 20px;*/
+    }
+    .lname {
+/*        font-size: 40px;*/
+    }
+    .country {
+/*
+        font-size: 24px;
+        line-height: 30px;
+*/
+    }
+    .bl_player_name>div {
+/*        line-height: 35px;*/
+    }
+    .football_club_form2:before {
+/*
+        background: url(../img/the_form2.png) center no-repeat;
+        width: 115px;
+        height: 133px;
+*/
+    }
+    .football_club_flag2:before {
+/*
+        background: url(../img/flag2.png) center no-repeat;
+        width: 175px;
+        height: 112px;
+*/
+    }
+    .modal_content {
+/*        background: url(../img/fifacover_350.png) no-repeat -40px 60px;*/
+    }
+    .football_club {
+/*        top: 515px;*/
+    }
+    .growth {
+/*        margin-top: 40px;*/
+    }
+    .count_time {
+        padding-left: 10%;
+    }
+    .count_carts {
+/*
+        top: 600px;
+        right: 0px;
+        margin-right: 20px;  
+*/
+    }
+    .feeding_leg {
+/*        display: none;*/
+    }
+/*
+    .feeding_leg_none {
+        display: block;
+        float: right;
+        position: relative;
+        top: 275px;
+        left: 128px;
+        width: 77px;
+        margin-right: 20px;
+    }
+    .feeding_leg_none:before {
+        content: '';
+        display: block;
+        position: relative;
+        top: -10px;
+        float: right;
+        right: 115px;
+        width: 66px;
+        height: 65px;
+        background: url(../img/feeding_leg.png) center no-repeat;
+    }
+*/
+/*
+    .feeding_leg_text_none {
+        position: relative;
+        bottom: 80px;
+        right: 28px;
+        line-height: 26px;
+    }
+    .feeding_leg_none span {
+        color: #ccff00;
+        font-family: "Impact";
+        font-size: 22px;
+    }
+    .feeding_leg_none .count_text {
+        font-size: 56px;
+    }
+*/
+
+    .player_info{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .player_photo{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .player_name{
+        
+        width: auto;
+        padding: 0 15px;
+    }
+    .player_detail{
+        margin: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .player_name_subscribe{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    .player_detail .player_subscribe,
+    .player_info>.player_name{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .bl_player_name {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	.player_photo{
+		padding: 10px;
+	}
+	.player_photo img{
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+	}
+	.player_name{
+		margin-top: -15px;
+	}
+
+    .content_header{
+        width: 90%;
+    }
+	
+}
+
+@media screen and (max-width: 460px) {
+    .bl_player_name {
+        padding-top: 40px;
+    }
+    .bl_player_name>div {
+        line-height: 28px;
+    }
+    .fname {
+        font-size: 24px;
+    }
+    .lname {
+        font-size: 32px;
+    }
+    .country {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .count_time {
+        padding-left: 10%;
+    }
+    .count_goals {
+        padding-right: 20px;
+    }
+    .count_text{
+        font-size: 50px;
+    }
+    .count_transfers .count_text {
+        font-size: 50px;
+    }
+    .count_time .count_text {
+        font-size: 50px;
+        top: 12px;
+    }
+    .count_carts:before {
+        top: 0px;
+        left: -155px;
+    }
+    .count_transfers>div {
+        left: 22px;
+    }
+    .count_transfers:before {
+        position: relative;
+        left: 15px;
+    }
+    .the_weight {
+        margin-right: 10px;
+    }
+    .growth {
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+/*
+    .football_club_flag2:before {
+        width: 115px;
+    }
+    .football_club {
+        width: 100%;
+        border-left: 0;
+    }
+    .football_club_text_text {
+        padding-left: 20px;
+        left: 0;
+    }
+    .football_club_form {
+        left: 190px;
+    }
+*/
+    .bl_player_name {
+        padding-left: 10px;
+    }
+    .football_club_form2 {
+        right: 100px;
+    }
+    .lname {
+        letter-spacing: 2px;
+    }
+    .fname {
+        letter-spacing: 2px;
+    }
+    .count_goals span.span_mini, .count_transfers span.span_mini {
+        font-size: 20px;
+    }
+    .count_goals>div, .count_transfers>div {
+        line-height: 20px;
+    }
+    .feeding_leg .count_text {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .count_time {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .bl_player_name {
+        padding-top: 42px;
+    }
+    .bl_player_name>div {
+        line-height: 26px;
+    }
+    .fname {
+        font-size: 20px;
+    }
+    .lname {
+        font-size: 26px;
+    }
+    .country {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .player_name_subscribe{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+/*
+    .bl_player_name {
+        padding-left: 20px;
+    }
+    .count_carts {
+        font-size: 40px;
+    }
+    .count_carts:before {
+        top: -5px;
+    }
+    .count_goals {
+        margin-top: 35px;
+    }
+    .count_goals .count_text {
+        font-size: 40px;
+    }
+    .count_transfers {
+        margin-right: -16px;
+        margin-top: 40px;
+    }
+    .count_transfers .count_text {
+        font-size: 40px;
+    }
+    .count_time .count_text {
+        font-size: 40px;
+        top: 5px;
+    }
+    .count_goals {
+        margin-right: 10px;
+    }
+    .count_goals span, .count_transfers span {
+        font-size: 20px;
+    }
+    .feeding_leg_none .count_text {
+        font-size: 50px;
+    }
+    .feeding_leg_none span {
+        font-size: 20px;
+    }
+    .feeding_leg_text_none {
+        right: 20px;
+    }
+    .feeding_leg_none:before {
+        right: 110px;
+    }
+*/
+}
+
+@media screen and (max-width: 370px) {
+/*
+    .football_club_text_text {
+        padding-left: 10px;
+    }
+    .football_club_text {
+        font-size: 16px;
+    }
+    .football_club_name {
+        font-size: 28px;
+    }
+    .football_club_form {
+        left: 170px;
+    }
+    .modal_content {
+        background: url(../img/fifacover_300.png) no-repeat -40px 100px;
+    }
+
+    .players{
+        margin-top: 20px;
+    }
+    .player_photo{
+        display: block;
+    }
+    .player_name{
+        margin-top: 5px;
+    }
+*/
+    .football_club_text_text {
+        padding-left: 25px;
+        top: -105px;
+        left: -8px;
+    }
+    .football_club_text {
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .football_club_name {
+        font-size: 20px;
+    }
+    .count_time:before {
+        background: url(../img/count_time_320.png);
+        width: 46px;
+        height: 54px;
+    }
+    .count_goals:before {
+        background: url(../img/count_goals_320.png);
+        width: 53px;
+        height: 40px;
+    }
+    .count_transfers:before {
+        background: url(../img/count_transfers_320.png);
+        width: 52px;
+        height: 49px;
+        position: relative;
+        left: -10px;
+        top: -10px;
+    }
+    .count_carts:before {
+        background: url(../img/count_carts_320.png);
+        width: 43px;
+        height: 58px;
+    }
+    .count_time .count_text {
+        font-size: 40px;
+        top: 10px;
+    }
+    .count_text {
+        font-size: 40px;
+    }
+    .count_transfers .count_text {
+        font-size: 40px;
+    }
+    .count_carts:before {
+        top: 0px;
+        left: -130px;
+    }
+    .count_carts {
+       /* top: 580px;
+        right: -110px;*/
+        top: 470px;
+    }
+    .feeding_leg {
+        /*top: 620px;*/
+        top: 470px;
+    }
+    /*.football_club {
+        top: 645px;
+    }*/
+    .count_transfers:before {
+        left: 8px;
+    }
+    .modal{
+        height: 970px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+/*
+    .feeding_leg_none {
+        left: 110px;
+        top: 171px;
+    }
+*/
+    .football_club_form {
+        left: 185px;
+    }
+    .football_club_text_text {
+        padding-left: 35px;
+        left: 22px;
+    }
+    .football_club_form2 {
+        right: 90px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .football_club_form {
+        left: 190px;
+    }
+    .football_club_text_text {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bl_player_name {
+/*        padding-left: 10px;*/
+    }
+    .bl_player_name>div {
+/*
+        line-height: 30px;
+        padding-top: 12px;
+*/
+    }
+    .football_club_flag2:before {
+/*        width: 100px;*/
+    }
+    .lname {
+/*        font-size: 36px;*/
+    }
+    .country {
+/*
+        font-size: 20px;
+        line-height: 24px;
+*/
+    }
+    .count_time .count_text {
+/*        font-size: 34px;*/
+    }
+    .count_time:before {
+/*
+        background: url(../img/count_time_320.png);
+        width: 46px;
+        height: 54px;
+*/
+    }
+    .count_goals:before {
+/*
+        background: url(../img/count_goals_320.png);
+        width: 53px;
+        height: 40px;
+*/
+    }
+    .count_transfers .count_text {
+/*	   font-size: 34px;*/
+    }
+    .count_transfers>div {
+/*        line-height: 18px;*/
+    }
+    .count_transfers:before {
+/*
+        background: url(../img/count_transfers_320.png);
+        width: 52px;
+        height: 49px;
+        position: relative;
+        left: -10px;
+        top: -10px;
+*/
+    }
+    .count_carts:before {
+/*
+        background: url(../img/count_carts_320.png);
+        width: 43px;
+        height: 58px;
+*/
+    }
+    .count_goals .count_text {
+/*        font-size: 34px;*/
+    }
+    .count_goals>div {
+/*        line-height: 18px*/
+    }
+    .the_weight {
+/*	   bottom: 40px;*/
+    }
+    .growth {
+/*	   top: 70px;*/
+    }
+    .count_carts {
+/*	   top: 590px;*/
+    }
+    .feeding_leg_none {
+/*	   top: 235px;*/
+    }
+    .football_club {
+/*	   top: 600px;*/
+    }
+    .football_club_form2 {
+        right: 80px;
+    }
+    .football_club_text_text {
+        top: -95px;
+        left: 40px;
+    }
+}
+
+
+/*Дальше уменьшать шрифты таблицы и что-то думать с картинками*/
