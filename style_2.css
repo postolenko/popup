@@ -118,6 +118,7 @@
 .popup_inner {
     position: relative;
     z-index: 2;
+    padding: 0 0 180px 0;
 }
 
 .popup_header {
@@ -203,6 +204,9 @@
     display: block;
     width: auto;
     height: auto;
+    /*max-height: 100%;*/
+    /*max-height: 74vh;*/
+    max-height: 140%;
     position: absolute;
     top: 55px;
     left: -24%;
@@ -225,7 +229,7 @@
 }
 
 .thumb-1_3_wrapp {
-    margin: 53px 0 43px 0;
+    margin: 8px 0 18px 0;
     text-align: right;
 }
 
@@ -240,6 +244,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    zoom: .7;
 }
 
 .thumb-1 p {
@@ -347,21 +352,34 @@
     background-size: 100%;
 }
 
-.thumb-1_1 {
+/*.thumb-1_1 {
     padding: 0 0 0 56px;
+}*/
+
+.thumb-1_1 {
+    padding: 0 0 0 54px;
 }
+
+/*.thumb-1_1 p {
+    position: relative;
+    top: 35px;
+}*/
 
 .thumb-1_1 p {
     position: relative;
-    top: 35px;
+    top: 5px;
 }
 
 .thumb-1_2 i {
     top: 24px;
 }
 
-.thumb-1_2 p {
+/*.thumb-1_2 p {
     padding: 0 0 0 106px;
+}*/
+
+.thumb-1_2 p {
+    padding: 0 0 0 82px;
 }
 
 .thumb-1_3 {
@@ -382,12 +400,12 @@
 
 .thumb-2_1_wrapp {
     text-align: right;
-    padding: 23px 0;
+    padding: 11px 0;
 }
 
 .thumb-2_2_wrapp {
     text-align: right;
-    padding: 23px 0;
+    padding: 11px 0;
 }
 
 .thumb-2 {
@@ -480,7 +498,11 @@
     line-height: 0;
     overflow: hidden;
     min-height: 150px;
+    width: 100%;
     padding: 25px 0 32px 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .popup_footer .col-1 {
@@ -608,19 +630,27 @@
 
 @media only screen and (max-width: 620px) {
 
+    .popup_inner {
+        padding: 0 0 180px 0;
+    }
+
+    .popup_header {
+        padding: 7px 0 11px 2%;
+    }
+
     .popup_header .desc {
         padding: 0 0 0 2%;
     }
 
     .popup_header h1 .small {
-        font-size: 33px;
-        line-height: 36px;
+        font-size: 29px;
+        line-height: 31px;
     }
 
     .popup_header h1 .big {
         margin: -13px 0;
-        font-size: 54px;
-        line-height: 61px;
+        font-size: 47px;
+        line-height: 55px;
     }
 
     .popup_header p {
@@ -631,11 +661,37 @@
     }
 
     .popup_header .img {
-        max-width: 148px;
+        max-width: 115px;
         right: 28%;
     }
 
-    .thumb-1_2_wrapp {
+    .popup_header .flag_box {
+        width: 51%;
+    }
+
+    .popup_header .flag_box img {
+        min-width: auto;
+        min-height: 100%;
+        max-width: 100%;
+        left: auto;
+        right: 0;
+    }
+
+    .popup_content {
+        padding: 7px 3%;
+    }
+
+/*    .player_img {
+        top: 66px;
+    }*/
+
+    .player_img {
+        max-height: 123%;
+        top: 60px;
+        left: -16%;
+    }
+
+/*    .thumb-1_2_wrapp {
         top: 20px;
     }
 
@@ -654,6 +710,69 @@
 
     .thumb-2_2_wrapp {
         padding: 10px 0;
+    }*/
+
+    .thumbs_wrapp {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .thumb-1_1_wrapp {
+        display: inline-block;
+        vertical-align: top;
+        width: 38%;
+        padding-right: 0;
+        margin: 0 2% 0 0;
+        padding: 0 2% 0 0;
+    }
+
+    .thumb-1_2_wrapp {
+        display: inline-block;
+        vertical-align: top;
+        width: 58%;
+        top: 0;
+        margin: 0 0 0 2%;        
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 47px;
+        line-height: 51px;
+    }
+
+    .thumb-2_1_wrapp {
+        padding: 0;
+    }
+
+    .thumb-2_2_wrapp {
+        padding: 4px 0;
+    }
+
+    .count_thumb_wrapp {
+        margin: 0 0 14px 0;
+    }
+
+    .count_thumb {
+        min-height: 93px;
+        margin-right: 0;
+    }
+
+    .count_thumb p {
+        font-size: 54px;
+        line-height: 61px;
+    }
+
+    .count_thumb i {
+        zoom: .7;
+    }
+
+    .thumb-3 p.p-1 {
+        font-size: 49px;
+        line-height: 50px;
+    }
+
+    .popup_footer {
+        min-height: 254px;
+        padding: 34px 0 18px 1%;
     }
 
     .popup_footer .col-1 {
@@ -665,9 +784,233 @@
         width: 100%;
     }
 
+    .club-article .inner {
+        min-height: 108px;
+        padding: 23px 0 21px 8%;
+    }
+
+    .club-article .img {
+        max-height: 124px;
+/*        position: absolute;
+        top: -23px;
+        right: 21%;
+        z-index: 2;*/
+    }
+
+    .club-article .img-box img {
+        /*display: block;*/
+        min-width: unset;
+        min-height: unset;
+        max-height: 100%;
+        max-width: 100%;
+/*        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);*/
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
+
+    .thumb-1 i {
+        zoom: .6;
+    }
+
+    .thumb-1 p {
+        font-size: 21px;
+        line-height: 22px;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 39px;
+        line-height: 44px;
+    }
+
+    .thumb-1 p.p-2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .thumb-1_3_wrapp {
+        margin: 8px 0 9px 0;
+    }
+
+    .count_thumb {
+        min-height: 46px;
+        padding: 0 0 0 43px;
+    }
+
+    .count_thumb p {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .count_thumb i {
+        zoom: .6;
+    }
+
+    .popup_footer {
+        min-height: 242px;
+    }
+
+    .popup_footer .col-1 {
+        padding: 10px 0 12px 0;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .popup_inner {
+        padding: 0 0 180px 0;
+    }
+
+    .popup_header {
+        padding: 2px 0 5px 2%;
+    }
+
+    .popup_header h1 .small {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .popup_header h1 .big {
+        margin: -9px 0;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .popup_header p {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .popup_header .img {
+        max-width: 93px;
+    }
+
+    .thumb-1_1 {
+        padding: 0 0 0 41px;
+    }
+
+    .thumb-1 i {
+        zoom: .5;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 29px;
+        line-height: 31px;
+    }
+
+    .thumb-1_2 p {
+        padding: 0 0 0 62px;
+    }
+
+    .thumb-1 p.p-1 .small {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .thumb-1 p {
+        font-size: 19px;
+        line-height: 19px;
+    }
+
+    .thumb-1_3 {
+        padding: 0 0 0 42px;
+    }
+
+    .thumb-2 {
+        width: 148px;
+        height: 64px;
+        background-size: contain;
+    }
+
+    .thumb-2_2 {
+        width: 140px;
+        height: 63px;
+    }
+
+    .thumb-2 i {
+        top: 13px;
+        left: 23px;
+        zoom: .8;
+    }
+
+    .thumb-2_2 i {
+        top: 14px;
+        left: 22px;
+    }
+
+    .thumb-2 p {
+        padding: 19px 12% 19px 0;
+    }
+
+    .thumb-2_2 p {
+        padding: 21px 11%;
+    }
+
+    .count_thumb {
+        min-height: 43px;
+        padding: 0 0 0 35px;
+    }
+
+    .count_thumb i {
+        top: -4px;
+        zoom: .5;
+    }
+
+    .count_thumb p {
+        font-size: 37px;
+        line-height: 43px;
+    }
+
+    .thumb-3 .img-box {
+        top: 0;
+    }
+
+    .thumb-3 p.p-1 {
+        margin: -7px 0 0 0;
+        font-size: 39px;
+        line-height: 45px;
+    }
+
+    .popup_footer .col-1 {
+        padding: 10px 0 7px 0;
+    }
+
+    .club-article .inner {
+        min-height: 78px;
+        padding: 17px 0 13px 6%;
+    }
+
+    .club-article .img {
+        max-height: 103px;
+        top: -19px;
+        right: 17%;
+    }
+
+    .club-article p {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .club-article p.p-1 {
+        font-size: 27px;
+        line-height: 29px;
+    }
+
+}
+
+/*@media only screen and (max-width: 480px) {
 
     .popup_header h1 .small {
         font-size: 25px;
@@ -748,4 +1091,4 @@
         opacity: .7;
     }
 
-}
+}*/
