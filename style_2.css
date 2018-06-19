@@ -95,6 +95,7 @@
 /*-- Popup --*/
 
 .popup {
+    height: 100vh;
     padding: 20px 0 0 0;
     overflow: hidden;
     background-image: url(img/popup_bg.jpg);
@@ -116,6 +117,7 @@
 }
 
 .popup_inner {
+    height: 100vh;
     position: relative;
     z-index: 2;
     padding: 0 0 180px 0;
@@ -669,12 +671,23 @@
         width: 51%;
     }
 
-    .popup_header .flag_box img {
+/*    .popup_header .flag_box img {
         min-width: auto;
         min-height: 100%;
         max-width: 100%;
         left: auto;
         right: 0;
+    }*/
+
+    .popup_header .flag_box img {
+        max-height: 100%;
+        max-width: auto;
+        min-width: auto;
+        min-height: auto;
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: none;
     }
 
     .popup_content {
@@ -858,7 +871,8 @@
     }
 
     .popup_footer {
-        min-height: 242px;
+        /*min-height: 242px;*/
+        min-height: 217px;
     }
 
     .popup_footer .col-1 {
@@ -1006,6 +1020,61 @@
     .club-article p.p-1 {
         font-size: 27px;
         line-height: 29px;
+    }
+
+}
+
+@media only screen and (max-height: 560px) {
+
+    .popup_header h1 .small {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .popup_header h1 .big {
+        margin: -9px 0;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .popup_header p {
+        font-size: 19px;
+        line-height: 19px;
+    }
+
+    .popup_header .img {
+        max-width: 76px;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 27px;
+        line-height: 29px;
+    }
+
+    .thumb-1_2 i {
+        top: 18px;
+    }
+
+    .thumb-1_3_wrapp {
+        margin: 8px 0 2px 0;
+    }
+
+    .thumb-2_2_wrapp {
+        padding: 0;
+    }
+
+    .thumb-3 {
+        padding: 0 0 5px 72px;
+    }
+
+    .thumb-3 p {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .thumb-3 p.p-1 {
+        font-size: 35px;
+        line-height: 41px;
     }
 
 }
