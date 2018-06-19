@@ -95,6 +95,7 @@
 /*-- Popup --*/
 
 .popup {
+    min-height: 100vh;
     padding: 20px 0 0 0;
     overflow: hidden;
     background-image: url(img/popup_bg.jpg);
@@ -116,8 +117,10 @@
 }
 
 .popup_inner {
+    min-height: 100vh;
     position: relative;
     z-index: 2;
+    padding: 0 0 180px 0;
 }
 
 .popup_header {
@@ -203,6 +206,7 @@
     display: block;
     width: auto;
     height: auto;
+    max-height: 140%;
     position: absolute;
     top: 55px;
     left: -24%;
@@ -225,7 +229,7 @@
 }
 
 .thumb-1_3_wrapp {
-    margin: 53px 0 43px 0;
+    margin: 8px 0 18px 0;
     text-align: right;
 }
 
@@ -240,6 +244,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    zoom: .7;
 }
 
 .thumb-1 p {
@@ -348,12 +353,12 @@
 }
 
 .thumb-1_1 {
-    padding: 0 0 0 56px;
+    padding: 0 0 0 54px;
 }
 
 .thumb-1_1 p {
     position: relative;
-    top: 35px;
+    top: 5px;
 }
 
 .thumb-1_2 i {
@@ -361,7 +366,7 @@
 }
 
 .thumb-1_2 p {
-    padding: 0 0 0 106px;
+    padding: 0 0 0 82px;
 }
 
 .thumb-1_3 {
@@ -382,12 +387,12 @@
 
 .thumb-2_1_wrapp {
     text-align: right;
-    padding: 23px 0;
+    padding: 11px 0;
 }
 
 .thumb-2_2_wrapp {
     text-align: right;
-    padding: 23px 0;
+    padding: 11px 0;
 }
 
 .thumb-2 {
@@ -480,7 +485,11 @@
     line-height: 0;
     overflow: hidden;
     min-height: 150px;
+    width: 100%;
     padding: 25px 0 32px 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .popup_footer .col-1 {
@@ -608,19 +617,27 @@
 
 @media only screen and (max-width: 620px) {
 
+    .popup_inner {
+        padding: 0 0 230px 0;
+    }
+
+    .popup_header {
+        padding: 7px 0 11px 2%;
+    }
+
     .popup_header .desc {
         padding: 0 0 0 2%;
     }
 
     .popup_header h1 .small {
-        font-size: 33px;
-        line-height: 36px;
+        font-size: 29px;
+        line-height: 31px;
     }
 
     .popup_header h1 .big {
         margin: -13px 0;
-        font-size: 54px;
-        line-height: 61px;
+        font-size: 47px;
+        line-height: 55px;
     }
 
     .popup_header p {
@@ -631,29 +648,96 @@
     }
 
     .popup_header .img {
-        max-width: 148px;
+        max-width: 115px;
         right: 28%;
     }
 
-    .thumb-1_2_wrapp {
-        top: 20px;
+    .popup_header .flag_box {
+        width: 51%;
+    }
+
+    .popup_header .flag_box img {
+        max-height: 100%;
+        max-width: auto;
+        min-width: auto;
+        min-height: auto;
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .popup_content {
+        padding: 7px 3%;
     }
 
     .player_img {
-        max-width: 78%;
-        left: -24%;
+        max-height: 123%;
+        top: 60px;
+        left: -16%;
     }
 
-    .thumb-1_3_wrapp {
-        margin: 38px 0 20px 0;
+    .thumbs_wrapp {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .thumb-1_1_wrapp {
+        display: inline-block;
+        vertical-align: top;
+        width: 38%;
+        padding-right: 0;
+        margin: 0 2% 0 0;
+        padding: 0 2% 0 0;
+    }
+
+    .thumb-1_2_wrapp {
+        display: inline-block;
+        vertical-align: top;
+        width: 58%;
+        top: 0;
+        margin: 0 0 0 2%;        
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 47px;
+        line-height: 51px;
     }
 
     .thumb-2_1_wrapp {
-        padding: 10px 0;
+        padding: 0;
     }
 
     .thumb-2_2_wrapp {
-        padding: 10px 0;
+        padding: 4px 0;
+    }
+
+    .count_thumb_wrapp {
+        margin: 0 0 14px 0;
+    }
+
+    .count_thumb {
+        min-height: 93px;
+        margin-right: 0;
+    }
+
+    .count_thumb p {
+        font-size: 54px;
+        line-height: 61px;
+    }
+
+    .count_thumb i {
+        zoom: .7;
+    }
+
+    .thumb-3 p.p-1 {
+        font-size: 49px;
+        line-height: 50px;
+    }
+
+    .popup_footer {
+        min-height: 230px;
+        padding: 0 0 0 1%;
     }
 
     .popup_footer .col-1 {
@@ -665,87 +749,272 @@
         width: 100%;
     }
 
+    .club-article .inner {
+        min-height: 108px;
+        padding: 23px 0 21px 8%;
+    }
+
+    .club-article .img {
+        max-height: 124px;
+    }
+
+    .club-article .img-box img {
+        min-width: unset;
+        min-height: unset;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
 
-    .popup_header h1 .small {
-        font-size: 25px;
-        line-height: 31px;
+    .thumb-1 i {
+        zoom: .6;
     }
 
-    .popup_header h1 .big {
-        margin: -13px 0;
-        font-size: 41px;
-        line-height: 51px;
-    }
-
-    .popup_header p {
-        padding-left: 0;
-        font-size: 25px;
-        line-height: 26px;
-    }
-
-    .popup_header .flag_box {
-        width: 54%;
-        opacity: .6;
-    }
-
-    .popup_header .img {
-        max-width: 100px;
-        right: 20%;
-        top: 1px;
-    }
-
-    .popup_content {
-        padding: 19px 3% 5px 3%;
+    .thumb-1 p {
+        font-size: 21px;
+        line-height: 22px;
     }
 
     .thumb-1 p.p-1 {
-        font-size: 50px;
-        line-height: 67px;
+        font-size: 39px;
+        line-height: 44px;
     }
 
-    .club-article .description {
-        padding: 0 4%;
+    .thumb-1 p.p-2 {
+        font-size: 20px;
+        line-height: 20px;
     }
 
-    .club-article .img-box {
-        opacity: .5;
-        right: unset;
-        left: 0;
+    .thumb-1_3_wrapp {
+        margin: 8px 0 9px 0;
     }
 
-    .club-article .img {
-        right: 0;
+    .count_thumb {
+        min-height: 46px;
+        padding: 0 0 0 43px;
     }
 
-    .popup_footer {
-        padding: 0 0 20px 0;
+    .count_thumb p {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .count_thumb i {
+        zoom: .6;
+    }
+
+    .popup_footer .col-1 {
+        padding: 10px 0 12px 0;
     }
 
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 390px) {
 
-    .popup_header .flag_box {
-        width: 83%;
+    .popup_inner {
+        padding: 0 0 110px 0;
+    }
+
+    .popup_header {
+        padding: 2px 0 5px 2%;
+    }
+
+    .popup_header h1 .small {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .popup_header h1 .big {
+        margin: -9px 0;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .popup_header p {
+        font-size: 25px;
+        line-height: 25px;
     }
 
     .popup_header .img {
-        right: 0;
+        max-width: 93px;
     }
 
-    .thumb-1_1_wrapp {
-        padding-right: 0;
+    .thumb-1_1 {
+        padding: 0 0 0 41px;
     }
 
-    .club-article .img-box {
-        width: 50%;
+    .thumb-1 i {
+        zoom: .5;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 29px;
+        line-height: 31px;
+    }
+
+    .thumb-1_2 p {
+        padding: 0 0 0 62px;
+    }
+
+    .thumb-1 p.p-1 .small {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .thumb-1 p {
+        font-size: 19px;
+        line-height: 19px;
+    }
+
+    .thumb-1_3 {
+        padding: 0 0 0 42px;
+    }
+
+    .thumb-2 {
+        width: 148px;
+        height: 64px;
+        background-size: contain;
+    }
+
+    .thumb-2_2 {
+        width: 140px;
+        height: 63px;
+    }
+
+    .thumb-2 i {
+        top: 13px;
+        left: 23px;
+        zoom: .8;
+    }
+
+    .thumb-2_2 i {
+        top: 14px;
+        left: 22px;
+    }
+
+    .thumb-2 p {
+        padding: 19px 12% 19px 0;
+    }
+
+    .thumb-2_2 p {
+        padding: 21px 11%;
+    }
+
+    .count_thumb {
+        min-height: 43px;
+        padding: 0 0 0 35px;
+    }
+
+    .count_thumb i {
+        top: -4px;
+        zoom: .5;
+    }
+
+    .count_thumb p {
+        font-size: 37px;
+        line-height: 43px;
+    }
+
+    .thumb-3 .img-box {
+        top: 0;
+    }
+
+    .thumb-3 p.p-1 {
+        margin: -7px 0 0 0;
+        font-size: 39px;
+        line-height: 45px;
+    }
+
+    .popup_footer {
+        min-height: 185px;
+    }
+
+    .popup_footer .col-1 {
+        padding: 10px 0 7px 0;
+    }
+
+    .club-article .inner {
+        min-height: 78px;
+        padding: 17px 0 13px 6%;
     }
 
     .club-article .img {
-        opacity: .7;
+        max-height: 103px;
+        top: -19px;
+        right: 17%;
+    }
+
+    .club-article p {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .club-article p.p-1 {
+        font-size: 27px;
+        line-height: 29px;
+    }
+
+}
+
+@media only screen and (max-height: 560px) {
+
+    .popup_header h1 .small {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .popup_header h1 .big {
+        margin: -9px 0;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .popup_header p {
+        font-size: 19px;
+        line-height: 19px;
+    }
+
+    .popup_header .img {
+        max-width: 76px;
+    }
+
+    .thumb-1 p.p-1 {
+        font-size: 27px;
+        line-height: 29px;
+    }
+
+    .thumb-1_2 i {
+        top: 18px;
+    }
+
+    .thumb-1_3_wrapp {
+        margin: 8px 0 2px 0;
+    }
+
+    .thumb-2_2_wrapp {
+        padding: 0;
+    }
+
+    .thumb-3 {
+        padding: 0 0 5px 72px;
+    }
+
+    .thumb-3 p {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .thumb-3 p.p-1 {
+        font-size: 35px;
+        line-height: 41px;
     }
 
 }
