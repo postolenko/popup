@@ -488,7 +488,8 @@
     width: 100%;
     padding: 25px 0 32px 3%;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
+    bottom: 60px;
     left: 0;
 }
 
@@ -615,7 +616,7 @@
 /*-- /Popup --*/
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 640px) {
 
     .popup_inner {
         padding: 0 0 230px 0;
@@ -964,7 +965,7 @@
 
 }
 
-@media only screen and (max-height: 560px) {
+@media only screen and (max-height: 570px) {
 
     .popup_header h1 .small {
         font-size: 19px;
@@ -1015,6 +1016,10 @@
     .thumb-3 p.p-1 {
         font-size: 35px;
         line-height: 41px;
+    }
+
+    .popup_footer {
+        bottom: 0; 
     }
 
 }
